@@ -1,9 +1,9 @@
-# hw11
-Tyler Peacock
-CMSC313 MW0830
-build commands:
-nasm -f elf32 -g -F dwarf -o asciihex.o asciihex.asm
-ld -m elf_i386 -o asciihex asciihex.o
+# hw11  
+Tyler Peacock  
+CMSC313 MW0830  
+build commands:  
+nasm -f elf32 -g -F dwarf -o asciihex.o asciihex.asm  
+ld -m elf_i386 -o asciihex asciihex.o  
 This code takes in bytes and outputs the bytes similar to a hex dump by converting each byte to ascii characters  
 eax stores the bytes, ebx stores the masked data, ecx counts how many chars have been added and functions as a loop variable  
 edx counts the number of bytes in outputBuf to be printed out at the end  
